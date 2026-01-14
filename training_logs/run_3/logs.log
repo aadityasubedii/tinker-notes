@@ -1,0 +1,1110 @@
+tinker_cookbook.utils.ml_log:415 [INFO] Logging to: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3
+tinker.lib.telemetry:203 [INFO] Exception logged for session ID: 562068ec-af0a-49fc-a49b-0977f6da084b
+tinker_cookbook.utils.ml_log:415 [INFO] Logging to: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3
+tinker.lib.public_interfaces.service_client:131 [INFO] Creating TrainingClient for model_id='7102d814-c08c-4f72-a045-a57329c70f7d'
+tinker_cookbook.supervised.train:226 [INFO] Training for 13 batches x 3 epochs = 39 steps
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 0
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 6.04 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting infrequent_evals
+tinker_cookbook.utils.misc_utils:23 [INFO] infrequent_evals took 0.00 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the tallest mountain in the world?
+
+Assistant: Mount Everest is the tallest mountain in the world at 8,849 meters (29,032 feet).
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.27 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 0                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000500 │
+│ num_loss_tokens                │ 113      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 210      │
+│ progress                       │ 0.000000 │
+│ test/nll                       │ 1.053470 │
+│ time/evals                     │ 6.042244 │
+│ time/get_batch                 │ 0.003190 │
+│ time/infrequent_evals          │ 0.000656 │
+│ time/step                      │ 1.276002 │
+│ time/total                     │ 7.324223 │
+│ train_mean_nll                 │ 0.683587 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the chemical symbol for gold?
+
+Assistant: The chemical symbol for gold is Au.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 0.89 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 1                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000487 │
+│ num_loss_tokens                │ 89       │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 200      │
+│ progress                       │ 0.025641 │
+│ time/get_batch                 │ 0.004267 │
+│ time/step                      │ 0.891598 │
+│ time/total                     │ 0.897037 │
+│ train_mean_nll                 │ 0.275911 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who was the first man on the moon?
+
+Assistant: Neil Armstrong was the first man to walk on the moon in 1969.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 0.93 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 2                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000474 │
+│ num_loss_tokens                │ 123      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 234      │
+│ progress                       │ 0.051282 │
+│ time/get_batch                 │ 0.002348 │
+│ time/step                      │ 0.931172 │
+│ time/total                     │ 0.935221 │
+│ train_mean_nll                 │ 0.386340 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the smallest prime number?
+
+Assistant: The smallest prime number is 2.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.13 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 3                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000462 │
+│ num_loss_tokens                │ 131      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 246      │
+│ progress                       │ 0.076923 │
+│ time/get_batch                 │ 0.003895 │
+│ time/step                      │ 1.129200 │
+│ time/total                     │ 1.134522 │
+│ train_mean_nll                 │ 0.496727 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a computer science tutor.
+
+User: What does HTML stand for?
+
+Assistant: HTML stands for HyperText Markup Language.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.25 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 4                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000449 │
+│ num_loss_tokens                │ 128      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 255      │
+│ progress                       │ 0.102564 │
+│ time/get_batch                 │ 0.002361 │
+│ time/step                      │ 1.252327 │
+│ time/total                     │ 1.255811 │
+│ train_mean_nll                 │ 0.671779 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who was Albert Einstein?
+
+Assistant: Albert Einstein was a theoretical physicist best known for developing the theory of relativity.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.16 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 5                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000436 │
+│ num_loss_tokens                │ 137      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 247      │
+│ progress                       │ 0.128205 │
+│ time/get_batch                 │ 0.002547 │
+│ time/step                      │ 1.159415 │
+│ time/total                     │ 1.163159 │
+│ train_mean_nll                 │ 1.165347 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the square root of 81?
+
+Assistant: The square root of 81 is 9.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.08 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 6                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000423 │
+│ num_loss_tokens                │ 129      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 236      │
+│ progress                       │ 0.153846 │
+│ time/get_batch                 │ 0.004372 │
+│ time/step                      │ 1.077756 │
+│ time/total                     │ 1.083270 │
+│ train_mean_nll                 │ 0.528135 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who painted the ceiling of the Sistine Chapel?
+
+Assistant: Michelangelo painted the ceiling of the Sistine Chapel.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.19 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 7                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000410 │
+│ num_loss_tokens                │ 127      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 235      │
+│ progress                       │ 0.179487 │
+│ time/get_batch                 │ 0.003536 │
+│ time/step                      │ 1.187082 │
+│ time/total                     │ 1.192106 │
+│ train_mean_nll                 │ 0.657751 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the first element on the periodic table?
+
+Assistant: The first element on the periodic table is Hydrogen (H).
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.07 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 8                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000397 │
+│ num_loss_tokens                │ 105      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 222      │
+│ progress                       │ 0.205128 │
+│ time/get_batch                 │ 0.005492 │
+│ time/step                      │ 1.068162 │
+│ time/total                     │ 1.075236 │
+│ train_mean_nll                 │ 0.266808 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a language teacher.
+
+User: Translate 'Good morning' to French.
+
+Assistant: 'Good morning' in French is 'Bonjour'.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.17 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 9                    
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000385 │
+│ num_loss_tokens                │ 123      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 231      │
+│ progress                       │ 0.230769 │
+│ time/get_batch                 │ 0.004007 │
+│ time/step                      │ 1.168356 │
+│ time/total                     │ 1.173535 │
+│ train_mean_nll                 │ 0.831062 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting save_checkpoint
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/weights/000010', 'sampler_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/sampler_weights/000010'}
+tinker_cookbook.utils.misc_utils:23 [INFO] save_checkpoint took 3.87 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 0.72 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the capital of China?
+
+Assistant: The capital of China is Beijing.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.19 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 10                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000372 │
+│ num_loss_tokens                │ 183      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 298      │
+│ progress                       │ 0.256410 │
+│ test/nll                       │ 0.596722 │
+│ time/evals                     │ 0.717475 │
+│ time/get_batch                 │ 0.002739 │
+│ time/save_checkpoint           │ 3.869154 │
+│ time/step                      │ 1.191230 │
+│ time/total                     │ 5.782515 │
+│ train_mean_nll                 │ 1.580304 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Explain what an atom is.
+
+Assistant: An atom is the smallest unit of matter that retains the properties of an element. It is made up of protons, neutrons, and electrons.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.35 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 11                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000359 │
+│ num_loss_tokens                │ 148      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 249      │
+│ progress                       │ 0.282051 │
+│ time/get_batch                 │ 0.003039 │
+│ time/step                      │ 1.353076 │
+│ time/total                     │ 1.357228 │
+│ train_mean_nll                 │ 0.523507 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the capital of Turkey?
+
+Assistant: The capital of Turkey is Ankara.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.11 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 12                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 0        │
+│ learning_rate                  │ 0.000346 │
+│ num_loss_tokens                │ 138      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 238      │
+│ progress                       │ 0.307692 │
+│ time/get_batch                 │ 0.002620 │
+│ time/step                      │ 1.106671 │
+│ time/total                     │ 1.110539 │
+│ train_mean_nll                 │ 0.813648 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 1
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a sports commentator.
+
+User: Who won the FIFA World Cup in 2018?
+
+Assistant: France won the FIFA World Cup in 2018.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.14 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 13                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000333 │
+│ num_loss_tokens                │ 101      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 208      │
+│ progress                       │ 0.333333 │
+│ time/get_batch                 │ 0.004328 │
+│ time/step                      │ 1.142775 │
+│ time/total                     │ 1.148597 │
+│ train_mean_nll                 │ 0.052228 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a poet.
+
+User: Write a short poem about the moon.
+
+Assistant: The moonlight glows bright
+Guiding travelers at night
+Silent, silver friend
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.13 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 14                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000321 │
+│ num_loss_tokens                │ 130      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 245      │
+│ progress                       │ 0.358974 │
+│ time/get_batch                 │ 0.003437 │
+│ time/step                      │ 1.129751 │
+│ time/total                     │ 1.134453 │
+│ train_mean_nll                 │ 0.615046 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the chemical symbol for silver?
+
+Assistant: The chemical symbol for silver is Ag.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.12 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 15                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000308 │
+│ num_loss_tokens                │ 132      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 256      │
+│ progress                       │ 0.384615 │
+│ time/get_batch                 │ 0.005086 │
+│ time/step                      │ 1.120824 │
+│ time/total                     │ 1.127389 │
+│ train_mean_nll                 │ 0.651278 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the capital of Japan?
+
+Assistant: The capital of Japan is Tokyo.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 0.89 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 16                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000295 │
+│ num_loss_tokens                │ 133      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 263      │
+│ progress                       │ 0.410256 │
+│ time/get_batch                 │ 0.004684 │
+│ time/step                      │ 0.890631 │
+│ time/total                     │ 0.896704 │
+│ train_mean_nll                 │ 0.407802 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Tell me a joke about computers.
+
+Assistant: Why did the computer go to the doctor? Because it caught a virus!
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.07 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 17                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000282 │
+│ num_loss_tokens                │ 104      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 198      │
+│ progress                       │ 0.435897 │
+│ time/get_batch                 │ 0.004056 │
+│ time/step                      │ 1.067266 │
+│ time/total                     │ 1.072885 │
+│ train_mean_nll                 │ 0.133374 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the chemical symbol for gold?
+
+Assistant: The chemical symbol for gold is Au.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.35 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 18                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000269 │
+│ num_loss_tokens                │ 116      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 229      │
+│ progress                       │ 0.461538 │
+│ time/get_batch                 │ 0.002792 │
+│ time/step                      │ 1.347246 │
+│ time/total                     │ 1.350991 │
+│ train_mean_nll                 │ 0.154407 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a weather expert.
+
+User: What causes thunderstorms?
+
+Assistant: Thunderstorms are caused by rapidly rising warm, moist air that cools and condenses, forming cumulonimbus clouds with lightning and thunder.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.23 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 19                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000256 │
+│ num_loss_tokens                │ 164      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 279      │
+│ progress                       │ 0.487179 │
+│ time/get_batch                 │ 0.004007 │
+│ time/step                      │ 1.234930 │
+│ time/total                     │ 1.239931 │
+│ train_mean_nll                 │ 0.352075 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting save_checkpoint
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/weights/000020', 'sampler_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/sampler_weights/000020'}
+tinker_cookbook.utils.misc_utils:23 [INFO] save_checkpoint took 2.88 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 0.98 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who was the first President of the United States?
+
+Assistant: George Washington was the first President of the United States.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.12 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 20                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000244 │
+│ num_loss_tokens                │ 143      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 256      │
+│ progress                       │ 0.512821 │
+│ test/nll                       │ 0.602070 │
+│ time/evals                     │ 0.985172 │
+│ time/get_batch                 │ 0.005000 │
+│ time/save_checkpoint           │ 2.881002 │
+│ time/step                      │ 1.124735 │
+│ time/total                     │ 4.998202 │
+│ train_mean_nll                 │ 0.249047 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Which planet is closest to the Sun?
+
+Assistant: The planet closest to the Sun is Mercury.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.25 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 21                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000231 │
+│ num_loss_tokens                │ 110      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 214      │
+│ progress                       │ 0.538462 │
+│ time/get_batch                 │ 0.004658 │
+│ time/step                      │ 1.255083 │
+│ time/total                     │ 1.261263 │
+│ train_mean_nll                 │ 0.098591 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a biology tutor.
+
+User: What is the function of red blood cells?
+
+Assistant: Red blood cells carry oxygen from the lungs to the body and return carbon dioxide to the lungs to be exhaled.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.11 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 22                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000218 │
+│ num_loss_tokens                │ 156      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 268      │
+│ progress                       │ 0.564103 │
+│ time/get_batch                 │ 0.005072 │
+│ time/step                      │ 1.107681 │
+│ time/total                     │ 1.114377 │
+│ train_mean_nll                 │ 0.173892 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What does DNA stand for?
+
+Assistant: DNA stands for Deoxyribonucleic Acid.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.16 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 23                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000205 │
+│ num_loss_tokens                │ 120      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 214      │
+│ progress                       │ 0.589744 │
+│ time/get_batch                 │ 0.004424 │
+│ time/step                      │ 1.161910 │
+│ time/total                     │ 1.167895 │
+│ train_mean_nll                 │ 0.065366 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the capital of Greece?
+
+Assistant: The capital of Greece is Athens.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.17 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 24                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000192 │
+│ num_loss_tokens                │ 135      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 243      │
+│ progress                       │ 0.615385 │
+│ time/get_batch                 │ 0.005130 │
+│ time/step                      │ 1.172579 │
+│ time/total                     │ 1.179618 │
+│ train_mean_nll                 │ 0.142649 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who discovered penicillin?
+
+Assistant: Penicillin was discovered by Alexander Fleming in 1928.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.10 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 25                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 1        │
+│ learning_rate                  │ 0.000179 │
+│ num_loss_tokens                │ 130      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 228      │
+│ progress                       │ 0.641026 │
+│ time/get_batch                 │ 0.004908 │
+│ time/step                      │ 1.099523 │
+│ time/total                     │ 1.105967 │
+│ train_mean_nll                 │ 0.273832 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 2
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the chemical formula for water?
+
+Assistant: The chemical formula for water is H₂O.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.16 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 26                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000167 │
+│ num_loss_tokens                │ 110      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 214      │
+│ progress                       │ 0.666667 │
+│ time/get_batch                 │ 0.003599 │
+│ time/step                      │ 1.162146 │
+│ time/total                     │ 1.167425 │
+│ train_mean_nll                 │ 0.061769 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Explain what an atom is.
+
+Assistant: An atom is the smallest unit of matter that retains the properties of an element. It is made up of protons, neutrons, and electrons.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.11 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 27                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000154 │
+│ num_loss_tokens                │ 176      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 291      │
+│ progress                       │ 0.692308 │
+│ time/get_batch                 │ 0.007044 │
+│ time/step                      │ 1.105717 │
+│ time/total                     │ 1.114583 │
+│ train_mean_nll                 │ 0.108640 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who was the first woman in space?
+
+Assistant: The first woman in space was Valentina Tereshkova from the Soviet Union in 1963.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.13 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 28                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000141 │
+│ num_loss_tokens                │ 103      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 199      │
+│ progress                       │ 0.717949 │
+│ time/get_batch                 │ 0.003082 │
+│ time/step                      │ 1.131480 │
+│ time/total                     │ 1.135737 │
+│ train_mean_nll                 │ 0.019889 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the largest bird in the world?
+
+Assistant: The largest bird in the world is the ostrich.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.14 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 29                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000128 │
+│ num_loss_tokens                │ 91       │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 204      │
+│ progress                       │ 0.743590 │
+│ time/get_batch                 │ 0.006565 │
+│ time/step                      │ 1.141497 │
+│ time/total                     │ 1.149740 │
+│ train_mean_nll                 │ 0.016152 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting save_checkpoint
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/weights/000030', 'sampler_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/sampler_weights/000030'}
+tinker_cookbook.utils.misc_utils:23 [INFO] save_checkpoint took 3.00 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 1.02 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is 2 to the power of 5?
+
+Assistant: 2 to the power of 5 (2⁵) is 32.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.17 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 30                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000115 │
+│ num_loss_tokens                │ 150      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 250      │
+│ progress                       │ 0.769231 │
+│ test/nll                       │ 0.620204 │
+│ time/evals                     │ 1.021018 │
+│ time/get_batch                 │ 0.004731 │
+│ time/save_checkpoint           │ 2.996710 │
+│ time/step                      │ 1.174372 │
+│ time/total                     │ 5.198650 │
+│ train_mean_nll                 │ 0.106312 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the largest internal organ in the human body?
+
+Assistant: The largest internal organ in the human body is the liver.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.14 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 31                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000103 │
+│ num_loss_tokens                │ 129      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 225      │
+│ progress                       │ 0.794872 │
+│ time/get_batch                 │ 0.002417 │
+│ time/step                      │ 1.143976 │
+│ time/total                     │ 1.147304 │
+│ train_mean_nll                 │ 0.159071 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What year did World War II end?
+
+Assistant: World War II ended in 1945.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.13 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 32                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000090 │
+│ num_loss_tokens                │ 116      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 230      │
+│ progress                       │ 0.820513 │
+│ time/get_batch                 │ 0.002517 │
+│ time/step                      │ 1.129659 │
+│ time/total                     │ 1.132917 │
+│ train_mean_nll                 │ 0.207710 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is 144 divided by 12?
+
+Assistant: 144 divided by 12 is 12.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.14 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 33                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000077 │
+│ num_loss_tokens                │ 106      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 214      │
+│ progress                       │ 0.846154 │
+│ time/get_batch                 │ 0.002343 │
+│ time/step                      │ 1.137115 │
+│ time/total                     │ 1.140503 │
+│ train_mean_nll                 │ 0.023540 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who wrote 'The Odyssey'?
+
+Assistant: 'The Odyssey' is attributed to the ancient Greek poet Homer.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.08 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 34                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000064 │
+│ num_loss_tokens                │ 128      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 245      │
+│ progress                       │ 0.871795 │
+│ time/get_batch                 │ 0.004198 │
+│ time/step                      │ 1.080074 │
+│ time/total                     │ 1.085806 │
+│ train_mean_nll                 │ 0.069781 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the square root of 144?
+
+Assistant: The square root of 144 is 12.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.09 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 35                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000051 │
+│ num_loss_tokens                │ 178      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 284      │
+│ progress                       │ 0.897436 │
+│ time/get_batch                 │ 0.004906 │
+│ time/step                      │ 1.094803 │
+│ time/total                     │ 1.101014 │
+│ train_mean_nll                 │ 0.131497 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: Who painted 'Starry Night'?
+
+Assistant: 'Starry Night' was painted by Vincent van Gogh.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 0.97 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 36                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000038 │
+│ num_loss_tokens                │ 135      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 273      │
+│ progress                       │ 0.923077 │
+│ time/get_batch                 │ 0.003425 │
+│ time/step                      │ 0.972204 │
+│ time/total                     │ 0.976555 │
+│ train_mean_nll                 │ 0.063195 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>System: You are a cooking assistant.
+
+User: How do you boil an egg?
+
+Assistant: Place eggs in boiling water for about 9–12 minutes depending on desired firmness, then cool in ice water.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.14 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 37                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000026 │
+│ num_loss_tokens                │ 120      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 235      │
+│ progress                       │ 0.948718 │
+│ time/get_batch                 │ 0.002750 │
+│ time/step                      │ 1.139192 │
+│ time/total                     │ 1.143046 │
+│ train_mean_nll                 │ 0.075394 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] <|begin_of_text|>User: What is the capital of Brazil?
+
+Assistant: The capital of Brazil is Brasília.
+
+User:
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.24 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+                   Step 38                   
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃ Metric                         ┃ Value    ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│ epoch                          │ 2        │
+│ learning_rate                  │ 0.000013 │
+│ num_loss_tokens                │ 132      │
+│ num_sequences                  │ 8        │
+│ num_tokens                     │ 237      │
+│ progress                       │ 0.974359 │
+│ time/get_batch                 │ 0.004651 │
+│ time/step                      │ 1.244660 │
+│ time/total                     │ 1.250741 │
+│ train_mean_nll                 │ 0.078340 │
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.ml_log:227 [INFO] Logging to: https://wandb.ai/architect-chips/Tinker-SFT/runs/ycullou8
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/weights/final', 'sampler_path': 'tinker://7102d814-c08c-4f72-a045-a57329c70f7d/sampler_weights/final'}
+tinker_cookbook.supervised.train:265 [INFO] Training completed successfully

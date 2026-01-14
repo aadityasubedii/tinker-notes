@@ -1,0 +1,103 @@
+_wandb:
+    value:
+        cli_version: 0.22.2
+        e:
+            9gjinyu8ipe1vwiumhqzs40x45su7418:
+                apple:
+                    ecpuCores: 4
+                    gpuCores: 30
+                    memoryGb: 36
+                    name: Apple M3 Max
+                    pcpuCores: 10
+                    ramTotalBytes: "38654705664"
+                    swapTotalBytes: "10737418240"
+                codePath: training_example.py
+                codePathLocal: training_example.py
+                cpu_count: 14
+                cpu_count_logical: 14
+                disk:
+                    /:
+                        total: "994662584320"
+                        used: "567433428992"
+                email: aaditya@architectchips.com
+                executable: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/bin/python
+                git:
+                    commit: 1cbb08330370542e0b055f636dbab1579a5499d8
+                    remote: git@github.com:thinking-machines-lab/tinker-cookbook.git
+                host: Aadityas-MacBook-Pro.local
+                memory:
+                    total: "38654705664"
+                os: macOS-14.6.1-arm64-arm-64bit
+                program: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_example.py
+                python: CPython 3.12.9
+                root: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3
+                startedAt: "2025-10-22T17:26:45.629706Z"
+                writerId: 9gjinyu8ipe1vwiumhqzs40x45su7418
+        m: []
+        python_version: 3.12.9
+        t:
+            "1":
+                - 1
+                - 49
+                - 51
+            "2":
+                - 1
+                - 11
+                - 49
+                - 51
+            "3":
+                - 2
+                - 13
+                - 16
+                - 61
+            "4": 3.12.9
+            "5": 0.22.2
+            "12": 0.22.2
+            "13": darwin-arm64
+adam_beta1:
+    value: 0.9
+adam_beta2:
+    value: 0.95
+adam_eps:
+    value: 1e-08
+base_url:
+    value: null
+dataset_builder:
+    value:
+        common_config:
+            batch_size: 8
+            max_length: 2048
+            model_name_for_tokenizer: meta-llama/Llama-3.2-1B
+            renderer_name: role_colon
+            train_on_what: ALL_ASSISTANT_MESSAGES
+        file_path: example-data/conversations.jsonl
+        shuffle_seed: 42
+        test_size: 24
+eval_every:
+    value: 10
+evaluator_builders:
+    value: []
+infrequent_eval_every:
+    value: 100
+infrequent_evaluator_builders:
+    value: []
+learning_rate:
+    value: 0.0005
+load_checkpoint_path:
+    value: null
+log_path:
+    value: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3
+lora_rank:
+    value: 32
+lr_schedule:
+    value: linear
+model_name:
+    value: meta-llama/Llama-3.2-1B
+num_epochs:
+    value: 3
+save_every:
+    value: 10
+wandb_name:
+    value: training-example
+wandb_project:
+    value: tinker-SFT

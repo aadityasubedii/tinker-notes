@@ -1,0 +1,126 @@
+### repo: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook @ 1cbb08330370542e0b055f636dbab1579a5499d8
+modules: tinker_cookbook
+-- repo-wide (vs HEAD, staged+unstaged) --
+diff --git a/assets/tinker-cover.png b/assets/tinker-cover.png
+deleted file mode 100644
+index 09a5354..0000000
+Binary files a/assets/tinker-cover.png and /dev/null differ
+diff --git a/tinker_cookbook/supervised/common.py b/tinker_cookbook/supervised/common.py
+index 9c103d7..d363d65 100644
+--- a/tinker_cookbook/supervised/common.py
++++ b/tinker_cookbook/supervised/common.py
+@@ -13,6 +13,7 @@ def compute_mean_nll(
+     total_weighted_logprobs = 0.0
+     total_weights = 0.0
+ 
++    # Log probabilities and weights are expected to have the same shape, so we can use zip.
+     for logprobs, weights in zip(logprobs_list, weights_list, strict=True):
+         logprobs_torch = logprobs.to_torch()
+         weights_torch = weights.to_torch()
+@@ -26,6 +27,7 @@ def compute_mean_nll(
+     return float(-total_weighted_logprobs / total_weights)
+ 
+ 
++# Reformat the tokens and weights into a tinker.Datum.
+ def datum_from_tokens_weights(
+     tokens: torch.Tensor,
+     weights: torch.Tensor,
+@@ -40,6 +42,7 @@ def datum_from_tokens_weights(
+     weights = weights[1:]
+ 
+     return tinker.Datum(
++        # format required for the tinker api
+         model_input=tinker.ModelInput.from_ints(tokens=input_tokens.tolist()),
+         loss_fn_inputs={
+             "weights": tinker.TensorData(
+diff --git a/tinker_cookbook/supervised/data.py b/tinker_cookbook/supervised/data.py
+index f0754af..6cd33a4 100644
+--- a/tinker_cookbook/supervised/data.py
++++ b/tinker_cookbook/supervised/data.py
+@@ -28,17 +28,17 @@ def conversation_to_datum(
+ def _one_of(a: Any, b: Any) -> bool:
+     return (a is not None and b is None) or (a is None and b is not None)
+ 
+-
++# Wrapper around a HuggingFace dataset to make it a SupervisedDataset.
+ class SupervisedDatasetFromHFDataset(SupervisedDataset):
+     def __init__(
+         self,
+         hf_dataset: datasets.Dataset,
+         batch_size: int,
+-        map_fn: Callable[[dict], tinker.Datum] | None = None,
+-        flatmap_fn: Callable[[dict], list[tinker.Datum]] | None = None,
++        map_fn: Callable[[dict], tinker.Datum] | None = None, # map a row to a Datum
++        flatmap_fn: Callable[[dict], list[tinker.Datum]] | None = None, # map a row to a list of Datums
+     ):
+         assert _one_of(map_fn, flatmap_fn), "Only one of map_fn or flatmap_fn can be provided"
+-        self.hf_dataset = hf_dataset
++        self.hf_dataset = hf_dataset # keep a reference to the original dataset to avoid statefulness
+         self.shuffle_dataset = (
+             hf_dataset  # Keep a reference to the original dataset to avoid statefulness
+         )
+@@ -63,6 +63,8 @@ class SupervisedDatasetFromHFDataset(SupervisedDataset):
+         return len(self.hf_dataset) // self.batch_size
+ 
+ 
++# Wrapper around a streaming HuggingFace dataset to make it a SupervisedDataset.
++# Use this for large datasets that don't fit in memory.
+ class StreamingSupervisedDatasetFromHFDataset(SupervisedDataset):
+     def __init__(
+         self,
+@@ -107,6 +109,8 @@ class StreamingSupervisedDatasetFromHFDataset(SupervisedDataset):
+         return self.length // self.batch_size
+ 
+ 
++# For your own datasets, you can use this builder to load data from a JSONL file.
++# The builder will convert the data into a HuggingFace dataset and then into a SupervisedDataset.
+ @chz.chz
+ class FromConversationFileBuilder(ChatDatasetBuilder):
+     file_path: str
+diff --git a/tinker_cookbook/supervised/nll_evaluator.py b/tinker_cookbook/supervised/nll_evaluator.py
+index e2dd7d0..bd5fdfc 100644
+--- a/tinker_cookbook/supervised/nll_evaluator.py
++++ b/tinker_cookbook/supervised/nll_evaluator.py
+@@ -11,14 +11,20 @@ class NLLEvaluator(TrainingClientEvaluator):
+         self.data = data
+ 
+     async def __call__(self, training_client: tinker.TrainingClient) -> dict[str, float]:
++        # forward pass to get logprobs
+         future = await training_client.forward_async(self.data, loss_fn="cross_entropy")
++        # wait for the result
+         result = await future.result_async()
++        # extract logprobs from the result
+         logprobs = [x["logprobs"] for x in result.loss_fn_outputs]
++        # extract weights from the data
+         weights = [datum.loss_fn_inputs["weights"] for datum in self.data]
++        # compute the mean negative log likelihood
+         nll = compute_mean_nll(logprobs, weights)
+         return {"nll": nll}
+ 
+     @classmethod
+     def from_dataset(cls, dataset: SupervisedDataset) -> "NLLEvaluator":
++        # get all the data from the dataset
+         all_data = list(itertools.chain(*[dataset.get_batch(i) for i in range(len(dataset))]))
+         return cls(all_data)
+diff --git a/tinker_cookbook/supervised/types.py b/tinker_cookbook/supervised/types.py
+index fbd703d..861476e 100644
+--- a/tinker_cookbook/supervised/types.py
++++ b/tinker_cookbook/supervised/types.py
+@@ -1,5 +1,5 @@
+ """
+-Basic interfaces and types for supervised training.
++Basic interfaces and types for supervised training. Definitions for classes. 
+ """
+ 
+ import logging
+diff --git a/tinker_cookbook/supervised/viz_sft_dataset.py b/tinker_cookbook/supervised/viz_sft_dataset.py
+index b52ee2e..0724e0c 100644
+--- a/tinker_cookbook/supervised/viz_sft_dataset.py
++++ b/tinker_cookbook/supervised/viz_sft_dataset.py
+@@ -1,5 +1,6 @@
+ """
+ Script to visualize supervised datasets in the terminal.
++Use this to visualize the output of different renderers.
+ """
+ 
+ import chz

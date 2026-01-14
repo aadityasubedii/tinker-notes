@@ -1,0 +1,17 @@
+{
+  "os":  "macOS-14.6.1-arm64-arm-64bit",
+  "python":  "CPython 3.12.9",
+  "startedAt":  "2025-10-22T17:19:35.284553Z",
+  "program":  "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_example.py",
+  "codePath":  "training_example.py",
+  "codePathLocal":  "training_example.py",
+  "git":  {
+    "remote":  "git@github.com:thinking-machines-lab/tinker-cookbook.git",
+    "commit":  "1cbb08330370542e0b055f636dbab1579a5499d8"
+  },
+  "email":  "aaditya@architectchips.com",
+  "root":  "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3",
+  "host":  "Aadityas-MacBook-Pro.local",
+  "executable":  "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/bin/python",
+  "writerId":  "3h11vulb408m3qn0wv9l9d5opcy5py1p"
+}

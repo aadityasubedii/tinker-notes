@@ -1,0 +1,835 @@
+tinker_cookbook.utils.ml_log:415 [INFO] Logging to: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs
+tinker.lib.public_interfaces.service_client:131 [INFO] Creating TrainingClient for model_id='27e7a6f3-2875-456b-a299-feae42131bb6'
+tinker_cookbook.supervised.train:226 [INFO] Training for 6 batches x 5 epochs = 30 steps
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 0
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 5.11 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting infrequent_evals
+tinker_cookbook.utils.misc_utils:23 [INFO] infrequent_evals took 0.00 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the chemical symbol for iron?
+[0m[33m
+[0m[33mAssistant:[0m[32m The chemical symbol for iron is Fe.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 2.00 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 0                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m0       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000500[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m268     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m490     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.000000[0m[32m [0m│
+│[36m [0m[36mtest/nll                      [0m[36m [0m│[32m [0m[32m1.031573[0m[32m [0m│
+│[36m [0m[36mtime/evals                    [0m[36m [0m│[32m [0m[32m5.113991[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.006057[0m[32m [0m│
+│[36m [0m[36mtime/infrequent_evals         [0m[36m [0m│[32m [0m[32m0.000496[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.998824[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m7.121126[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.830525[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: Name the largest desert in the world.
+[0m[33m
+[0m[33mAssistant:[0m[32m The largest desert in the world is the Antarctic Desert.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.67 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 1                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m0       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000483[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m310     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m526     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.033333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.006046[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.668064[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.675134[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.574165[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: Define gravity.
+[0m[33m
+[0m[33mAssistant:[0m[32m Gravity is the force that attracts two bodies toward each other, most notably the attraction between the Earth and objects on it.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.79 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 2                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m0       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000467[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m229     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m437     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.066667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.005588[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.786018[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.792713[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.636563[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the largest bird in the world?
+[0m[33m
+[0m[33mAssistant:[0m[32m The largest bird in the world is the ostrich.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.70 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 3                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m0       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000450[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m240     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m479     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.100000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.007658[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.698472[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.707424[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.570049[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a movie buff.
+[0m[33m
+[0m[33mUser: Who directed 'Jurassic Park'?
+[0m[33m
+[0m[33mAssistant:[0m[32m 'Jurassic Park' was directed by Steven Spielberg.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.40 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 4                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m0       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000433[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m247     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m474     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.133333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.008790[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.395227[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.405068[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.435297[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is 200 minus 75?
+[0m[33m
+[0m[33mAssistant:[0m[32m 200 minus 75 is 125.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.69 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 5                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m0       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000417[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m269     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m481     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.166667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.006850[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.693346[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.701405[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.381523[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 1
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a poet.
+[0m[33m
+[0m[33mUser: Write a short poem about the moon.
+[0m[33m
+[0m[33mAssistant:[0m[32m The moonlight glows bright
+[0m[32mGuiding travelers at night
+[0m[32mSilent, silver friend
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.49 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 6                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m1       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000400[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m277     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m504     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.200000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.005481[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.489048[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.495723[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.314124[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the largest bird in the world?
+[0m[33m
+[0m[33mAssistant:[0m[32m The largest bird in the world is the ostrich.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.62 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 7                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m1       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000383[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m204     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m432     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.233333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.007685[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.623403[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.631950[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.126819[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a space expert.
+[0m[33m
+[0m[33mUser: What is a black hole?
+[0m[33m
+[0m[33mAssistant:[0m[32m A black hole is a region of space where gravity is so strong that not even light can escape from it.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.63 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 8                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m1       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000367[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m275     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m499     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.266667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.008501[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.633909[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.643134[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.134038[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the boiling point of water at sea level?
+[0m[33m
+[0m[33mAssistant:[0m[32m The boiling point of water at sea level is 100°C or 212°F.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.50 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 9                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m1       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000350[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m267     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m492     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.300000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.003437[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.495402[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.499617[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.242292[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting save_checkpoint
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://27e7a6f3-2875-456b-a299-feae42131bb6/weights/000010', 'sampler_path': 'tinker://27e7a6f3-2875-456b-a299-feae42131bb6/sampler_weights/000010'}
+tinker_cookbook.utils.misc_utils:23 [INFO] save_checkpoint took 8.73 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 1.29 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the capital of Kenya?
+[0m[33m
+[0m[33mAssistant:[0m[32m The capital of Kenya is Nairobi.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.76 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 10                    [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue    [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m1        [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000333 [0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m240      [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16       [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m429      [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.333333 [0m[32m [0m│
+│[36m [0m[36mtest/nll                      [0m[36m [0m│[32m [0m[32m0.390672 [0m[32m [0m│
+│[36m [0m[36mtime/evals                    [0m[36m [0m│[32m [0m[32m1.286331 [0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.008039 [0m[32m [0m│
+│[36m [0m[36mtime/save_checkpoint          [0m[36m [0m│[32m [0m[32m8.728523 [0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.763668 [0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m11.787973[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.108011 [0m[32m [0m│
+└────────────────────────────────┴───────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is 200 minus 75?
+[0m[33m
+[0m[33mAssistant:[0m[32m 200 minus 75 is 125.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.53 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 11                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m1       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000317[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m315     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m525     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.366667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.006254[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.528251[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.535705[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.295972[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 2
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a sports commentator.
+[0m[33m
+[0m[33mUser: Who won the FIFA World Cup in 2018?
+[0m[33m
+[0m[33mAssistant:[0m[32m France won the FIFA World Cup in 2018.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.68 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 12                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m2       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000300[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m235     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m442     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.400000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.006070[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.679356[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.686801[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.023210[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What year did the Titanic sink?
+[0m[33m
+[0m[33mAssistant:[0m[32m The Titanic sank in 1912.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.65 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 13                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m2       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000283[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m249     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m460     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.433333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.004672[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.651856[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.657257[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.058358[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the largest ocean?
+[0m[33m
+[0m[33mAssistant:[0m[32m The Pacific Ocean is the largest ocean on Earth.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.57 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 14                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m2       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000267[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m309     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m554     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.466667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.003685[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.568895[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.574160[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.148369[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is 9 squared?
+[0m[33m
+[0m[33mAssistant:[0m[32m 9 squared is 81.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.58 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 15                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m2       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000250[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m260     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m480     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.500000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.007950[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.575325[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.583965[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.062970[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is 45 divided by 5?
+[0m[33m
+[0m[33mAssistant:[0m[32m 45 divided by 5 is 9.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.75 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 16                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m2       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000233[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m222     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m430     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.533333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.003210[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.747032[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.751685[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.046014[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: Who was the first female Prime Minister of the UK?
+[0m[33m
+[0m[33mAssistant:[0m[32m Margaret Thatcher was the first female Prime Minister of the United Kingdom.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.60 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 17                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m2       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000217[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m256     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m485     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.566667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.008706[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.600891[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.611012[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.081080[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 3
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a music teacher.
+[0m[33m
+[0m[33mUser: What are the notes in a C major scale?
+[0m[33m
+[0m[33mAssistant:[0m[32m The notes in a C major scale are C, D, E, F, G, A, B, and back to C.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.58 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 18                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m3       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000200[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m254     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m501     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.600000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.006400[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.582884[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.589846[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.026344[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the capital of Kenya?
+[0m[33m
+[0m[33mAssistant:[0m[32m The capital of Kenya is Nairobi.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.60 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 19                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m3       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000183[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m268     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m487     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.633333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.003406[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.596050[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.600276[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.037963[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting save_checkpoint
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://27e7a6f3-2875-456b-a299-feae42131bb6/weights/000020', 'sampler_path': 'tinker://27e7a6f3-2875-456b-a299-feae42131bb6/sampler_weights/000020'}
+tinker_cookbook.utils.misc_utils:23 [INFO] save_checkpoint took 6.07 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting evals
+tinker_cookbook.utils.misc_utils:23 [INFO] evals took 1.40 seconds
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a puzzle master.
+[0m[33m
+[0m[33mUser: Give me a quick puzzle.
+[0m[33m
+[0m[33mAssistant:[0m[32m I speak without a mouth and hear without ears. I have no body, but I come alive with the wind. What am I? — An echo.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.57 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 20                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m3       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000167[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m230     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m445     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.666667[0m[32m [0m│
+│[36m [0m[36mtest/nll                      [0m[36m [0m│[32m [0m[32m0.448917[0m[32m [0m│
+│[36m [0m[36mtime/evals                    [0m[36m [0m│[32m [0m[32m1.404821[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.005669[0m[32m [0m│
+│[36m [0m[36mtime/save_checkpoint          [0m[36m [0m│[32m [0m[32m6.073490[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.570800[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m9.055812[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.028829[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What does DNA stand for?
+[0m[33m
+[0m[33mAssistant:[0m[32m DNA stands for Deoxyribonucleic Acid.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.56 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 21                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m3       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000150[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m232     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m431     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.700000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.005006[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.563902[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.569792[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.003543[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the chemical formula for water?
+[0m[33m
+[0m[33mAssistant:[0m[32m The chemical formula for water is H₂O.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.56 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 22                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m3       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000133[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m254     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m480     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.733333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.005359[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.558997[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.565546[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.045683[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>System: You are a storyteller.
+[0m[33m
+[0m[33mUser: Tell me a one-sentence story.
+[0m[33m
+[0m[33mAssistant:[0m[32m A lost balloon drifted into the sky, carrying with it the dreams of a small child.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.56 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 23                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m3       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000117[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m278     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m493     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.766667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.007304[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.564791[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.573272[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.016769[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.supervised.train:233 [INFO] Starting epoch 4
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: Who was the first man on the moon?
+[0m[33m
+[0m[33mAssistant:[0m[32m Neil Armstrong was the first man to walk on the moon in 1969.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.39 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 24                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m4       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000100[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m297     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m529     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.800000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.004981[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.393344[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.399446[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.010015[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the largest internal organ in the human body?
+[0m[33m
+[0m[33mAssistant:[0m[32m The largest internal organ in the human body is the liver.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.53 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 25                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m4       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000083[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m215     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m400     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.833333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.007237[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.526224[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.534495[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.008650[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is 64 divided by 8?
+[0m[33m
+[0m[33mAssistant:[0m[32m 64 divided by 8 is 8.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.50 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 26                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m4       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000067[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m261     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m475     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.866667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.008482[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.497029[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.506105[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.031358[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the boiling point of water at sea level?
+[0m[33m
+[0m[33mAssistant:[0m[32m The boiling point of water at sea level is 100°C or 212°F.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.55 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 27                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m4       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000050[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m297     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m518     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.900000[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.003965[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.549006[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.553435[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.035269[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.00 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the capital of China?
+[0m[33m
+[0m[33mAssistant:[0m[32m The capital of China is Beijing.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 1.54 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 28                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m4       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000033[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m215     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m442     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.933333[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.003666[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m1.543965[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m1.548590[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.002847[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting get_batch
+tinker_cookbook.utils.misc_utils:23 [INFO] get_batch took 0.01 seconds
+tinker_cookbook.supervised.train:149 [INFO] [33m<|begin_of_text|>User: What is the chemical symbol for iron?
+[0m[33m
+[0m[33mAssistant:[0m[32m The chemical symbol for iron is Fe.
+[0m[32m
+[0m[32mUser:[0m
+tinker_cookbook.utils.misc_utils:20 [INFO] Starting step
+tinker_cookbook.utils.misc_utils:23 [INFO] step took 5.83 seconds
+tinker_cookbook.utils.ml_log:134 [INFO] Wrote metrics to /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/metrics.jsonl
+tinker_cookbook.utils.ml_log:186 [INFO] 
+[3m                   Step 29                   [0m
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┓
+┃[1;35m [0m[1;35mMetric                        [0m[1;35m [0m┃[1;35m [0m[1;35mValue   [0m[1;35m [0m┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━┩
+│[36m [0m[36mepoch                         [0m[36m [0m│[32m [0m[32m4       [0m[32m [0m│
+│[36m [0m[36mlearning_rate                 [0m[36m [0m│[32m [0m[32m0.000017[0m[32m [0m│
+│[36m [0m[36mnum_loss_tokens               [0m[36m [0m│[32m [0m[32m247     [0m[32m [0m│
+│[36m [0m[36mnum_sequences                 [0m[36m [0m│[32m [0m[32m16      [0m[32m [0m│
+│[36m [0m[36mnum_tokens                    [0m[36m [0m│[32m [0m[32m482     [0m[32m [0m│
+│[36m [0m[36mprogress                      [0m[36m [0m│[32m [0m[32m0.966667[0m[32m [0m│
+│[36m [0m[36mtime/get_batch                [0m[36m [0m│[32m [0m[32m0.007243[0m[32m [0m│
+│[36m [0m[36mtime/step                     [0m[36m [0m│[32m [0m[32m5.826635[0m[32m [0m│
+│[36m [0m[36mtime/total                    [0m[36m [0m│[32m [0m[32m5.835078[0m[32m [0m│
+│[36m [0m[36mtrain_mean_nll                [0m[36m [0m│[32m [0m[32m0.003673[0m[32m [0m│
+└────────────────────────────────┴──────────┘
+tinker_cookbook.checkpoint_utils:75 [INFO] Saved checkpoints: {'state_path': 'tinker://27e7a6f3-2875-456b-a299-feae42131bb6/weights/final', 'sampler_path': 'tinker://27e7a6f3-2875-456b-a299-feae42131bb6/sampler_weights/final'}
+tinker_cookbook.supervised.train:265 [INFO] Training completed successfully
+tinker_cookbook.utils.ml_log:415 [INFO] Logging to: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs
+tinker.lib.public_interfaces.service_client:131 [INFO] Creating TrainingClient for model_id='88d600fe-1f1d-4808-b943-b6915d756840'
+tinker_cookbook.supervised.train:210 [INFO] Loaded weights from tinker://27e7a6f3-2875-456b-a299-feae42131bb6/weights/final
+tinker_cookbook.supervised.train:226 [INFO] Training for 6 batches x 5 epochs = 30 steps
+tinker_cookbook.supervised.train:261 [INFO] Training was already complete; nothing to do
+tinker_cookbook.supervised.train:265 [INFO] Training completed successfully

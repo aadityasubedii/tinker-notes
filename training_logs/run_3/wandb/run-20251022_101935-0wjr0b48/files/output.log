@@ -1,0 +1,37 @@
+tinker_cookbook.utils.ml_log:415 [[92mINFO[0m] Logging to: /Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_logs/run_3
+tinker.lib.telemetry:203 [[92mINFO[0m] Exception logged for session ID: 562068ec-af0a-49fc-a49b-0977f6da084b
+Traceback (most recent call last):
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_example.py", line 45, in <module>
+    train.main(config)
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/tinker_cookbook/supervised/train.py", line 212, in main
+    training_client = service_client.create_lora_training_client(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/lib/sync_only.py", line 77, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/lib/telemetry.py", line 393, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/lib/public_interfaces/service_client.py", line 130, in create_lora_training_client
+    ).result()
+      ^^^^^^^^
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/lib/public_interfaces/api_future.py", line 33, in result
+    return self._future.result(timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/miniconda3/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/lib/public_interfaces/service_client.py", line 88, in _create_model_async
+    with self.holder.aclient(ClientConnectionPoolType.TRAIN) as client:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/miniconda3/lib/python3.12/contextlib.py", line 137, in __enter__
+    return next(self.gen)
+           ^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/lib/internal_client_holder.py", line 54, in aclient
+    self._clients.append(AsyncTinker(**self._constructor_kwargs))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/venv/lib/python3.12/site-packages/tinker/_client.py", line 290, in __init__
+    raise TinkerError(
+tinker.TinkerError: The api_key client option must be set either by passing api_key to the client or by setting the TINKER_API_KEY environment variable
