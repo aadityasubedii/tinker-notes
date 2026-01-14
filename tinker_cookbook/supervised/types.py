@@ -1,5 +1,5 @@
 """
-Basic interfaces and types for supervised training.
+Basic interfaces and types for supervised training. Definitions for classes. 
 """
 
 import logging

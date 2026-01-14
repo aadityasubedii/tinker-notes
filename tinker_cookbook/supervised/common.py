@@ -13,6 +13,7 @@ def compute_mean_nll(
     total_weighted_logprobs = 0.0
     total_weights = 0.0
 
+    # Log probabilities and weights are expected to have the same shape, so we can use zip.
     for logprobs, weights in zip(logprobs_list, weights_list, strict=True):
         logprobs_torch = logprobs.to_torch()
         weights_torch = weights.to_torch()
@@ -26,6 +27,7 @@ def compute_mean_nll(
     return float(-total_weighted_logprobs / total_weights)
 
 
+# Reformat the tokens and weights into a tinker.Datum.
 def datum_from_tokens_weights(
     tokens: torch.Tensor,
     weights: torch.Tensor,
@@ -40,6 +42,7 @@ def datum_from_tokens_weights(
     weights = weights[1:]
 
     return tinker.Datum(
+        # format required for the tinker api
         model_input=tinker.ModelInput.from_ints(tokens=input_tokens.tolist()),
         loss_fn_inputs={
             "weights": tinker.TensorData(

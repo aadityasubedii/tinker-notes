@@ -1,5 +1,6 @@
 """
 Script to visualize supervised datasets in the terminal.
+Use this to visualize the output of different renderers.
 """
 
 import chz

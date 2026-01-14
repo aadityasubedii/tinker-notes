@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/training_example.py", line 2, in <module>
+    from tinker_cookbook.supervised import train
+  File "/Users/aadityasubedi/Desktop/tinker/tinker-cookbook/tinker_cookbook/supervised/train.py", line 10, in <module>
+    import chz
+ModuleNotFoundError: No module named 'chz'

@@ -28,17 +28,17 @@ def conversation_to_datum(
 def _one_of(a: Any, b: Any) -> bool:
     return (a is not None and b is None) or (a is None and b is not None)
 
-
+# Wrapper around a HuggingFace dataset to make it a SupervisedDataset.
 class SupervisedDatasetFromHFDataset(SupervisedDataset):
     def __init__(
         self,
         hf_dataset: datasets.Dataset,
         batch_size: int,
-        map_fn: Callable[[dict], tinker.Datum] | None = None,
-        flatmap_fn: Callable[[dict], list[tinker.Datum]] | None = None,
+        map_fn: Callable[[dict], tinker.Datum] | None = None, # map a row to a Datum
+        flatmap_fn: Callable[[dict], list[tinker.Datum]] | None = None, # map a row to a list of Datums
     ):
         assert _one_of(map_fn, flatmap_fn), "Only one of map_fn or flatmap_fn can be provided"
-        self.hf_dataset = hf_dataset
+        self.hf_dataset = hf_dataset # keep a reference to the original dataset to avoid statefulness
         self.shuffle_dataset = (
             hf_dataset  # Keep a reference to the original dataset to avoid statefulness
         )
@@ -63,6 +63,8 @@ class SupervisedDatasetFromHFDataset(SupervisedDataset):
         return len(self.hf_dataset) // self.batch_size
 
 
+# Wrapper around a streaming HuggingFace dataset to make it a SupervisedDataset.
+# Use this for large datasets that don't fit in memory.
 class StreamingSupervisedDatasetFromHFDataset(SupervisedDataset):
     def __init__(
         self,
@@ -107,6 +109,8 @@ class StreamingSupervisedDatasetFromHFDataset(SupervisedDataset):
         return self.length // self.batch_size
 
 
+# For your own datasets, you can use this builder to load data from a JSONL file.
+# The builder will convert the data into a HuggingFace dataset and then into a SupervisedDataset.
 @chz.chz
 class FromConversationFileBuilder(ChatDatasetBuilder):
     file_path: str
