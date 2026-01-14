@@ -1,0 +1,50 @@
+# Connecting Weights & Biases (W&B) to Track Training
+
+## Quick Setup (3 Steps)
+
+### 1. Install W&B
+```bash
+pip install wandb
+```
+
+### 2. Login to W&B
+```bash
+wandb login
+```
+This will ask for your API key. Get it from: https://wandb.ai/authorize
+
+### 3. Add W&B Config to Your Training Script
+In your training_example.py, add these two parameters to the Config:
+
+```python
+config = train.Config(
+    # ... other settings ...
+    wandb_project="project-name",        # Your project name on W&B
+    wandb_name="training-example",     # Name for this specific run
+)
+```
+
+## What You Already Have
+Your training_example.py (lines 40-41) already has W&B configured! ✓
+
+## What Happens When You Run
+1. The training script automatically logs metrics (loss, learning rate, etc.) to W&B
+2. Go to https://wandb.ai/your-username/project-name to see:
+   - Loss curves (training & validation)
+   - Learning rate schedule
+   - GPU usage
+   - Training progress in real-time
+
+## Run Your Training
+```bash
+python tinker-cookbook/training_example.py
+```
+
+## View Results
+After starting training, the terminal will show a link like:
+` View run at: https://wandb.ai/your-username/project-name/runs/abc123`
+
+Click it to see your loss curves!
+
+## Optional: Disable W&B (if needed)
+Remove or comment out the `wandb_project` and `wandb_name` lines from Config.

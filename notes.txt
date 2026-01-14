@@ -1,0 +1,246 @@
+# Training Example Notes - tinker-cookbook/training_example.py
+
+## What This Script Does
+This script is to use tinker to run SFT on a Large Language Model (LLM) using your custom conversation data. 
+---
+
+## How to Run the Training
+
+### Prerequisites
+1. Install dependencies:
+   ```bash
+   pip install wandb  # For tracking training metrics
+   ```
+
+2. Login to Weights & Biases (W&B):
+   ```bash
+   wandb login
+   ```
+   Get your API key from: https://wandb.ai/authorize
+
+3. Make sure you have your training data:
+   - File: `example-data/conversations.jsonl`
+   - Format: JSONL file with conversation examples
+
+### Run the Training
+```bash
+cd tinker-cookbook
+python training_example.py
+```
+
+---
+
+## Understanding the Code (Line by Line)
+
+### 1. Model Configuration (Lines 8-10)
+```python
+model_name = "meta-llama/Llama-3.2-1B"
+renderer_name = model_info.get_recommended_renderer_name(model_name)
+```
+**What it does**: 
+- Chooses which AI model to train (Llama 3.2 with 1 billion parameters)
+- Gets the "renderer" - a tool that converts conversations into a format the model understands (tokens and weights)
+
+**Beginner explanation**: Think of the model as a student, and the renderer as a translator that converts your teaching materials into a language the student can learn from.
+
+---
+
+### 2. Dataset Configuration (Lines 13-19)
+```python
+common_config = ChatDatasetBuilderCommonConfig(
+    model_name_for_tokenizer=model_name,
+    renderer_name=renderer_name,
+    max_length=2048,        # max tokens per example
+    batch_size=8,           # batch size for training
+    train_on_what=TrainOnWhat.ALL_ASSISTANT_MESSAGES,
+)
+```
+**What it does**:
+- `max_length=2048`: Limits each training example to 2048 tokens (roughly 1500 words)
+- `batch_size=8`: Processes 8 examples at once (like teaching 8 lessons simultaneously)
+- `train_on_what`: Tells the model to only learn from assistant responses (not user messages)
+
+**Beginner explanation**: This is like setting up your teaching plan - how long each lesson should be, how many students to teach at once, and what parts of the conversation to focus on.
+
+---
+
+### 3. Dataset Builder (Lines 22-27)
+```python
+dataset_builder = FromConversationFileBuilder(
+    common_config=common_config,
+    file_path="example-data/conversations.jsonl",
+    test_size=24,           # test split
+    shuffle_seed=42,        # for reproducibility
+)
+```
+**What it does**:
+- Loads your conversation data from the JSONL file
+- `test_size=24`: Keeps 24 examples aside for testing (to see if the model learned well)
+- `shuffle_seed=42`: Randomly mixes the data (but in a reproducible way)
+
+**Beginner explanation**: This loads your teaching materials and splits them into two piles: one for teaching (training) and one for testing (to check if the student learned).
+
+---
+
+### 4. Training Configuration (Lines 30-42)
+```python
+config = train.Config(
+    log_path="/path/to/training_logs/run_3",
+    model_name=model_name,
+    dataset_builder=dataset_builder,
+    learning_rate=5e-4,     # 0.0005
+    lr_schedule="linear",
+    num_epochs=3,
+    lora_rank=32,
+    save_every=10,
+    eval_every=10,
+    wandb_project="tinker-SFT",
+    wandb_name="training-example",
+)
+```
+
+**Key Parameters Explained**:
+
+- **`log_path`**: Where to save training logs and checkpoints (like saving your progress)
+
+- **`learning_rate=5e-4`**: How fast the model learns (0.0005)
+  - Too high = learns fast but might miss details
+  - Too low = learns slowly but more carefully
+  - Think of it like studying speed
+
+- **`lr_schedule="linear"`**: Gradually reduces learning rate over time
+  - Starts learning fast, then slows down for fine-tuning
+  - Like studying hard at first, then reviewing carefully
+
+- **`num_epochs=3`**: How many times to go through all training data
+  - 1 epoch = seeing all examples once
+  - 3 epochs = reviewing all examples 3 times
+
+- **`lora_rank=32`**: Uses LoRA (Low-Rank Adaptation) technique
+  - Instead of updating all model weights, only updates small parts
+  - Makes training faster and uses less memory
+  - Rank 32 = moderate complexity (good balance)
+
+- **`save_every=10`**: Saves a checkpoint every 10 steps
+  - Like saving your game progress regularly
+
+- **`eval_every=10`**: Tests the model every 10 steps
+  - Checks how well it's learning on test data
+
+- **`wandb_project` & `wandb_name`**: W&B tracking settings
+  - Project: folder name on W&B dashboard
+  - Name: specific run name
+
+---
+
+## Weights & Biases (W&B) Dashboard - What You'll See
+
+When training runs, W&B tracks and visualizes everything. Here's what each chart means:
+
+### 1. **train_mean_nll** (Negative Log Likelihood - LOSS CURVE)
+- **What it shows**: The main loss/error metric during training
+- **What you want**: Line going DOWN (from ~1.4 to ~0.1)
+- **What it means**: 
+  - High values = model is making lots of mistakes
+  - Low values = model is learning and making fewer mistakes
+  - This is THE most important chart - it shows if your model is actually learning!
+
+### 2. **progress**
+- **What it shows**: Training progress from 0 to 1 (0% to 100%)
+- **What you want**: Steady upward line
+- **What it means**: Just a progress bar showing how far through training you are
+
+### 3. **num_tokens**
+- **What it shows**: Number of tokens processed in each batch
+- **What you want**: Relatively stable (around 200-300)
+- **What it means**: Shows how much data is in each training batch
+- Varies because conversations have different lengths
+
+### 4. **num_sequences**
+- **What it shows**: Number of conversation examples per batch
+- **What you want**: Stable horizontal line (at 8, matching batch_size)
+- **What it means**: Confirms you're processing the right number of examples
+
+### 5. **num_loss_tokens**
+- **What it shows**: Number of tokens the model is actually learning from
+- **What you want**: Varies (90-180 range is normal)
+- **What it means**: 
+  - Remember `train_on_what=ALL_ASSISTANT_MESSAGES`?
+  - This shows how many assistant tokens are in each batch
+  - Lower than num_tokens because we skip user messages
+
+### 6. **learning_rate**
+- **What it shows**: Current learning rate over time
+- **What you want**: Smooth decline (from 0.0005 to ~0.00001)
+- **What it means**: 
+  - Starts high for fast learning
+  - Gradually decreases for fine-tuning
+  - Linear schedule = straight diagonal line down
+
+---
+
+## What Success Looks Like
+
+**Good Training Run**:
+✓ Loss (train_mean_nll) decreases steadily
+✓ Loss goes from ~1.4 down to ~0.1-0.2
+✓ Learning rate decreases smoothly
+✓ No sudden spikes or crashes
+
+**Warning Signs**:
+✗ Loss increases or stays flat
+✗ Loss becomes NaN (Not a Number)
+✗ Sudden spikes in loss
+✗ Loss decreases too fast (might be overfitting)
+
+---
+
+## After Training Completes
+
+1. **Find your trained model**: 
+   - Location: `training_logs/run_3/checkpoints/`
+   - Files: `.safetensors` files (model weights)
+
+2. **View full results on W&B**:
+   - Go to: https://wandb.ai/your-username/tinker-SFT
+   - Click on run: "training-example"
+   - Explore all charts and metrics
+
+3. **Use your trained model**:
+   - Load the checkpoint
+   - Run inference to test responses
+   - Compare with original model
+
+---
+
+## Common Issues & Solutions
+
+**Issue**: "CUDA out of memory"
+- **Solution**: Reduce `batch_size` from 8 to 4 or 2
+
+**Issue**: Loss not decreasing
+- **Solution**: 
+  - Check if data is formatted correctly
+  - Try increasing `learning_rate` to 1e-3
+  - Increase `num_epochs`
+
+**Issue**: W&B not logging
+- **Solution**: 
+  - Run `wandb login` again
+  - Check internet connection
+  - Verify `wandb_project` name is valid
+
+---
+
+## Quick Reference
+
+| Parameter | Current Value | What It Does |
+|-----------|---------------|--------------|
+| Model | Llama-3.2-1B | Which AI to train |
+| Batch Size | 8 | Examples per step |
+| Learning Rate | 0.0005 | How fast to learn |
+| Epochs | 3 | Times through data |
+| Max Length | 2048 | Max tokens per example |
+| LoRA Rank | 32 | Training efficiency |
+
+---
